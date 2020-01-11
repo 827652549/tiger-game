@@ -121,14 +121,13 @@ let requestPage3 = () => {
                 </td>
                
                 <td>
-                    <input type="number" class="form-control" id="inputWeight" data-id="${result[i].id}" placeholder="输入权重" value="${result[i].weight}" 
+                    <input type="number" class="form-control" id="inputWeight" max="2147483647" min="0" data-id="${result[i].id}" placeholder="输入权重" value="${result[i].weight}" 
                     onchange="weightChange(this)">
                 </td>
                 <td>
-                <input type="number" class="form-control" id="inputCount" data-id="${result[i].id}" placeholder="输入库存" value='${result[i].count}'
+                <input type="number" class="form-control" id="inputCount" min="0" data-id="${result[i].id}" placeholder="输入库存" value='${result[i].count}'
                     onchange="countChange(this)"
                 >
-                   
                 </td>
             </tr>
                     `;
@@ -176,6 +175,12 @@ let buttonAction = () => {
     });
 
 
+};
+/**
+ * 发布配置按钮
+ */
+let download = () => {
+    window.open("http://10.85.16.65:8080/download",'_blank');
 };
 
 /**
