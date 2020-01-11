@@ -1,9 +1,10 @@
 @charset "UTF-8";
-*{
+* {
     margin: 0 auto;
-    padding:0;
+    padding: 0;
 }
-html,body{
+
+html, body {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -12,8 +13,8 @@ html,body{
 
     background-color: #143b58;
     font-size: medium;
-    font-family: sy-medium,'微软雅黑', sans-serif;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    font-family: sy-medium, '微软雅黑', sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background-image: url("../images/1首页_slices/bg.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -22,7 +23,8 @@ html,body{
     -webkit-backface-visibility:hidden;
     -webkit-transform:translate3d(0,0,0);*/
 }
-#slogan{
+
+#slogan {
     width: 1080px;
     height: 314px;
     position: absolute;
@@ -30,14 +32,16 @@ html,body{
     top: 33px;
     z-index: 10;
 }
-#tiger{
-    width:1080px;
+
+#tiger {
+    width: 1080px;
     height: 1104px;
     position: absolute;
     top: 289px;
     left: 0;
 }
-#rule{
+
+#rule {
     font-size: 49px;
     position: absolute;
     left: 445px;
@@ -45,53 +49,60 @@ html,body{
     color: #ffffff;
     font-family: sy-medium;;
 }
-#rule-line-left{
-    border:1.5px solid rgba(139,29,50,1);
-    box-shadow:0px 1px 0px 0px rgba(255,255,255,0.43);
+
+#rule-line-left {
+    border: 1.5px solid rgba(139, 29, 50, 1);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.43);
     position: absolute;
     left: 67px;
     top: 1438px;
-    width:331px;
+    width: 331px;
 }
-#rule-line-right{
-    border:1.5px solid rgba(139,29,50,1);
-    box-shadow:0px 1px 0px 0px rgba(255,255,255,0.43);
+
+#rule-line-right {
+    border: 1.5px solid rgba(139, 29, 50, 1);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.43);
     position: absolute;
     left: 682px;
     top: 1438px;
-    width:331px;
+    width: 331px;
 }
-#rule-total{
+
+#rule-total {
     position: absolute;
     left: 93px;
     top: 1508px;
     width: 851px;
     height: 292px;
-    font-size:30px;
-    font-family:sy-medium;
-    font-weight:500;
-    color:rgba(255,255,255,1);
+    font-size: 30px;
+    font-family: sy-medium;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
     line-height: 45px;
     padding-left: 44px;
 }
-#nowClick{
+
+#nowClick {
     position: absolute;
     left: 320px;
     top: 1032px;
     width: 441px;
     height: 185px;
 }
-#nowClick:hover{
+
+#nowClick:hover {
     cursor: pointer;
 }
-#light{
+
+#light {
     position: absolute;
     left: 115px;
     top: 606px;
     width: 859px;
     height: 422px;
 }
-.num{
+
+.num {
     width: 188px;
     height: 188px;
     background: url(../images/1首页_slices/奖品列表.png) center 0 repeat-y;
@@ -101,58 +112,70 @@ html,body{
     transition-timing-function: cubic-bezier(0.6, 0.1, 0.15, .9);
 
 }
-.num1{
+
+.num1 {
     transition-delay: 0s;
     transition-duration: 3s;
 }
-.num2{
+
+.num2 {
     transition-delay: 0.3s;
     transition-duration: 4s;
 }
-.num3{
+
+.num3 {
     transition-delay: 0.6s;
     transition-duration: 5s;
 }
 
-.circle{
-  position: absolute;
+.circle {
+    position: absolute;
     left: 79px;
     width: 44px;
     height: 44px;
 }
-#circle1{
+
+#circle1 {
     top: 1511px;
 }
-#circle2{
+
+#circle2 {
     top: 1612px;
 }
-#circle3{
+
+#circle3 {
     top: 1711px;
 }
-#circle4{
+
+#circle4 {
     top: 1764px;
 }
-.circle-nums{
+
+.circle-nums {
     position: absolute;
     left: 93px;
     font-size: 30px;
     color: #9A0415;
     font-family: sy-medium;
 }
-#circle-num1{
+
+#circle-num1 {
     top: 1512px;
 }
-#circle-num2{
+
+#circle-num2 {
     top: 1612px;
 }
-#circle-num3{
+
+#circle-num3 {
     top: 1712px;
 }
-#circle-num4{
+
+#circle-num4 {
     top: 1765px;
 }
 
-#up-down{
+#up-down {
     display: flex;
     margin-bottom: 30px;
     width: 744px;
@@ -160,47 +183,52 @@ html,body{
     left: 172px;
     top: 726px;
 }
-#go{
+
+#go {
     z-index: 20;
 }
-
-
 
 
 /**
 等设计给字体文件之后再调节
  */
-ol{list-style-type: none}
-ol li{
-    list-style-position:outside;
+ol {
+    list-style-type: none
+}
+
+ol li {
+    list-style-position: outside;
     line-height: 50px;
 }
 
-#alert-window{
+#alert-window {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 30;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     display: none;
 }
-#blackboard{
+
+#blackboard {
     position: absolute;
     left: 90px;
     top: 273px;
     width: 898px;
     height: 1216px;
 }
-#x-light{
+
+#x-light {
     position: absolute;
     left: 0px;
     top: 58px;
     width: 1080px;
     height: 1159px;
 }
-#celebrate{
+
+#celebrate {
     position: absolute;
     left: 422px;
     top: 609px;
@@ -208,45 +236,50 @@ ol li{
     height: 48px;
     font-size: 49px;
     font-family: sy-medium;
-    color:rgba(255,255,255,1);
-    font-weight:500;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
     line-height: 40px;
 }
-#in-board{
+
+#in-board {
     position: absolute;
     left: 280px;
     top: 696px;
     width: 534px;
     height: 450px;
 }
-#real-prize{
+
+#real-prize {
     position: absolute;
     left: 347px;
     top: 726px;
     width: 400px;
     height: 320px;
 }
-#prize-name{
+
+#prize-name {
     position: absolute;
     left: 0px;
     top: 1085px;
     width: 100%;
-    font-size:36px;
-    font-family:sy-medium;
-    font-weight:500;
-    color:rgba(255,255,255,1);
-    line-height:40px;
+    font-size: 36px;
+    font-family: sy-medium;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 40px;
     text-align: center;
     margin-left: 5px;
 }
-#button-ikonw{
+
+#button-ikonw {
     position: absolute;
     left: 283px;
     top: 1157px;
     width: 527px;
     height: 249px;
 }
-#font-iknow{
+
+#font-iknow {
     position: absolute;
     left: 0;
     top: 1230px;
@@ -256,48 +289,104 @@ ol li{
     color: rgba(193, 42, 33, 1);
     font-family: sy-bold;
 }
-#font-iknow #span1{
+
+#font-iknow #span1 {
     font-size: 60px;
 }
-#font-iknow #span2{
+
+#font-iknow #span2 {
     font-size: 40px;
 }
-#call{
+
+#call {
     position: absolute;
     left: 367px;
     top: 1395px;
-    font-size:30px;
-    font-family:sy-medium;
-    font-weight:500;
-    color:rgba(255,255,255,1);
-    line-height:40px;
+    font-size: 30px;
+    font-family: sy-medium;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 40px;
 }
 
 
+#mrq {
+    width: 843px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    padding: 2px;
+    position: absolute;
+    left: 119px;
+    top: 347px;
+    border-radius: 18px
+}
 
-#mrq{width:843px; margin:20px auto;border:1px solid #000; padding:2px;position: absolute;left: 119px;top: 347px;border-radius: 18px}
-#Marquee_x { overflow:hidden; width: 843px ;border-radius: 18px;}
-#Marquee_x ul li ,#Marquee_x ul li div{ float:left;line-height:25px;overflow:hidden} /* 横向滚动必须让所有li左浮动 */
-#Marquee_x ul li div{margin: 0 0 10px 10px;float:left;line-height:25px;height:200px; width:200px; overflow:hidden;border: #d9afc2 1px solid;background-color: #ffffff;border-radius: 10px;box-shadow:0px 0px 5px #5f051b inset; }
-#Marquee_x ul li div img{ border:1px solid #DADADA; width:160px; height:130px; display:block;}
-#Marquee_x ul li div span{ display:block;
-    text-align:center;
-    color:rgba(110,61,29,1);
-    line-height:40px;
-    font-size:18px;
-    font-family:sy-regular;
-    font-weight:400;}
-#n{margin:10px auto; width:920px; border:1px solid #CCC;font-size:12px; line-height:30px;}
-#n a{ padding:0 4px; color:#333}
+#Marquee_x {
+    overflow: hidden;
+    width: 843px;
+    border-radius: 18px;
+}
+
+#Marquee_x ul li, #Marquee_x ul li div {
+    float: left;
+    line-height: 25px;
+    overflow: hidden
+}
+
+/* 横向滚动必须让所有li左浮动 */
+#Marquee_x ul li div {
+    margin: 0 0 10px 10px;
+    float: left;
+    line-height: 25px;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border: #d9afc2 1px solid;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #5f051b inset;
+}
+
+#Marquee_x ul li div img {
+    border: 1px solid #DADADA;
+    width: 160px;
+    height: 130px;
+    display: block;
+}
+
+#Marquee_x ul li div span {
+    display: block;
+    text-align: center;
+    color: rgba(110, 61, 29, 1);
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sy-regular;
+    font-weight: 400;
+}
+
+#n {
+    margin: 10px auto;
+    width: 920px;
+    border: 1px solid #CCC;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+#n a {
+    padding: 0 4px;
+    color: #333
+}
 
 @font-face {
     font-family: sy-medium;
     src: url("../font/SourceHanSansCN-Medium.otf");
 }
+
 @font-face {
     font-family: sy-bold;
     src: url("../font/SourceHanSansCN-Bold.otf");
 }
+
 @font-face {
     font-family: sy-regular;
     src: url("../font/SourceHanSansCN-Regular.otf");
