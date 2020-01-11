@@ -135,7 +135,7 @@ let requestPrice = () => {
             //请求的媒体类型
             contentType: "application/json;charset=UTF-8",
             //请求地址
-            url: "http://10.85.16.65:8080/getPrize",
+            url: "http://39.106.201.50:8080/getPrize",
             //请求成功
             success: function (result) {
                 //更改弹窗图片

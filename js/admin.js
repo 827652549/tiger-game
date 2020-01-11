@@ -13,7 +13,7 @@ let requestPage1 = () => {
             //请求的媒体类型
             contentType: "application/json;charset=UTF-8",
             //请求地址
-            url: "http://10.85.16.65:8080/getList",
+            url: "http://39.106.201.50:8080/getList",
             //请求成功
             success: function (result) {
                 for (let i = 0; i < result.length; i++) {
@@ -60,7 +60,7 @@ let requestPage2 = () => {
             //请求的媒体类型
             contentType: "application/json;charset=UTF-8",
             //请求地址
-            url: "http://10.85.16.65:8080/getRecordList",
+            url: "http://39.106.201.50:8080/getRecordList",
             //请求成功
             success: function (result) {
                 for (let i = result.length - 1; i >= 0; i--) {
@@ -104,7 +104,7 @@ let requestPage3 = () => {
             //请求的媒体类型
             contentType: "application/json;charset=UTF-8",
             //请求地址
-            url: "http://10.85.16.65:8080/getList",
+            url: "http://39.106.201.50:8080/getList",
             //请求成功
             success: function (result) {
                 conResult = result;
@@ -158,15 +158,17 @@ let buttonAction = () => {
             // //请求的媒体类型
             contentType: "application/json",
             //请求地址
-            url: "http://10.85.16.65:8080/updateList",
+            url: "http://39.106.201.50:8080/updateList",
             //数据，json字符串
             data: JSON.stringify(conResult),
             //请求成功
             success: function (result) {
+                alert('发布成功！');
                 console.log(result);
             },
             //请求失败，包含具体的错误信息
             error: function (e) {
+                alert('发布失败！');
                 console.log(e.status);
                 console.log(JSON.parse(e.responseText));
             }
