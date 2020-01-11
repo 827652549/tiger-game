@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>不间断图片滚动在线演示 DIVCSS5</title>
+    <style>
+        /* DIVCSS5-CSS初始化模板-www.divcss5.com */
+        body, div,  ul,  li{margin:0; padding:0;font-style: normal;font:12px/22px "\5B8B\4F53",Arial, Helvetica, sans-serif}
+        /* \5B8B\4F53 代表 宋体，更多中文字体转 Unicode http://www.divcss5.com/jiqiao/j325.shtml */
+        ol, ul ,li{list-style:none}
+        img {border: 0; vertical-align:middle}
+        body{color:#000000;background:#FFF; text-align:center}
+        .clear{clear:both;height:1px;width:100%; overflow:hidden; margin-top:-1px}
+        a{color:#000000;text-decoration:none}
+        a:hover{color:#BA2636;text-decoration:underline}
+
+        #mrq{width:860px; margin:20px auto;border:1px solid #000; padding:2px}
+        #Marquee_x { overflow:hidden; width: 860px }
+        #Marquee_x ul li ,#Marquee_x ul li div{ float:left;line-height:25px;overflow:hidden} /* 横向滚动必须让所有li左浮动 */
+        #Marquee_x ul li div{ float:left;line-height:25px;height:200px; width:200px; overflow:hidden;border: #d9afc2 1px solid;background-color: #ffffff;border-radius: 10px;box-shadow:0px 0px 5px #5f051b inset; }
+        #Marquee_x ul li div img{ border:1px solid #DADADA; width:160px; height:130px; display:block;}
+        #Marquee_x ul li div span{ display:block;
+            color:rgba(110,61,29,1);
+            line-height:40px;
+            font-size:18px;
+            font-family:Source Han Sans CN;
+            font-weight:400;}
+        #n{margin:10px auto; width:920px; border:1px solid #CCC;font-size:12px; line-height:30px;}
+        #n a{ padding:0 4px; color:#333}
+
+    </style>
+    <!-- www.divcss5.com -->
+    <script type="text/javascript" src="http://www.divcss5.com/yanshi/2014/2014022401/jquery-1.7.2.min.js"></script>
+    <script src="http://www.divcss5.com/yanshi/2014/2014022401/jQuery-jcMarquee.js" type="text/javascript"></script>
+    <script>
+        $(function(){
+            $('#Marquee_x').jcMarquee({ 'marquee':'x','margin_right':'10px','speed':20 });
+            // DIVCSS5提示：10px代表间距，第二个20代表滚动速度
+        });
+    </script>
+</head>
+<body>
+
+<div id="mrq">
+    <!-- divcss5提示：特效DIV开始 -->
+    <div id="Marquee_x">
+        <ul>
+            <li>
+                <div><span>iPhone11pro Max</span><img src="images/1首页_slices/iPhone11pro%20Max.png" /></div>
+                <div><span>HUAWEI Mate 30 Pro</span><img src="images/1首页_slices/HUAWEI%20Mate%2030%20Pro.png" /></div>
+                <div><span>金条</span><img src="images/1首页_slices/金条.png" /></div>
+                <div><span>暖手袋</span><img src="images/1首页_slices/暖手袋.png" /></div>
+                <div><span>花如玉对碗</span><img src="images/1首页_slices/花如玉对碗.png" /></div>
+                <div><span>电动牙刷</span><img src="images/1首页_slices/电动牙刷.png" /></div>
+                <div><span>欧姆龙按摩器</span><img src="images/1首页_slices/欧姆龙按摩器.png" /></div>
+                <div><span>挂烫机</span><img src="images/1首页_slices/挂烫机.png" /></div>
+                <div><span>黄油饼干</span><img src="images/1首页_slices/黄油饼干.png" /></div>
+                <div><span>焖烧杯</span><img src="images/1首页_slices/焖烧杯.png" /></div>
+                <div><span>雪平锅</span><img src="images/1首页_slices/雪平锅.png" /></div>
+                <div><span>松下吹风机</span><img src="images/1首页_slices/松下吹风机.png" /></div>
+                <div><span>象印电饭煲</span><img src="images/1首页_slices/象印电饭煲.png" /></div>
+                <div><span>旅行收纳套装</span><img src="images/1首页_slices/旅行收纳套装.png" /></div>
+                <div><span>12元代金券</span><img src="images/1首页_slices/12元现金券.png" /></div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

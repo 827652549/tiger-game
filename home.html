@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" /> -->
+    <meta name="viewport" content="width=1080, target-densitydpi=device-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>老虎机-横屏</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="http://www.divcss5.com/yanshi/2014/2014022401/jquery-1.7.2.min.js"></script>
+    <script src="http://www.divcss5.com/yanshi/2014/2014022401/jQuery-jcMarquee.js" type="text/javascript"></script>
+</head>
+
+<body>
+<img src="images/1首页_slices/slogan.png" id="slogan">
+<img src="images/1首页_slices/老虎机.png" id="tiger">
+<img src="images/1首页_slices/立即抽奖tab.png" id="nowClick" onclick="draw()">
+<img src="images/1首页_slices/跑马灯1.png" id="light">
+
+<!--横向滚动特效-->
+<div id="mrq">
+    <div id="Marquee_x">
+        <ul>
+            <li>
+                <div><span>iPhone11pro Max</span><img src="images/1首页_slices/iPhone11pro%20Max.png" /></div>
+                <div><span>HUAWEI Mate 30 Pro</span><img src="images/1首页_slices/HUAWEI%20Mate%2030%20Pro.png" /></div>
+                <div><span>金条</span><img src="images/1首页_slices/金条.png" /></div>
+                <div><span>暖手袋</span><img src="images/1首页_slices/暖手袋.png" /></div>
+                <div><span>花如玉对碗</span><img src="images/1首页_slices/花如玉对碗.png" /></div>
+                <div><span>电动牙刷</span><img src="images/1首页_slices/电动牙刷.png" /></div>
+                <div><span>欧姆龙按摩器</span><img src="images/1首页_slices/欧姆龙按摩器.png" /></div>
+                <div><span>挂烫机</span><img src="images/1首页_slices/挂烫机.png" /></div>
+                <div><span>黄油饼干</span><img src="images/1首页_slices/黄油饼干.png" /></div>
+                <div><span>焖烧杯</span><img src="images/1首页_slices/焖烧杯.png" /></div>
+                <div><span>雪平锅</span><img src="images/1首页_slices/雪平锅.png" /></div>
+                <div><span>松下吹风机</span><img src="images/1首页_slices/松下吹风机.png" /></div>
+                <div><span>象印电饭煲</span><img src="images/1首页_slices/象印电饭煲.png" /></div>
+                <div><span>旅行收纳套装</span><img src="images/1首页_slices/旅行收纳套装.png" /></div>
+                <div><span>保温箱</span><img src="images/1首页_slices/保温箱.png" /></div>
+                <div><span>12元代金券</span><img src="images/1首页_slices/12元现金券.png" /></div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--全长744px，每个图片是188px*188px，左右间距是30px-->
+<div id="up-down">
+    <div class="num num1"></div>
+    <div class="num num2"></div>
+    <div class="num num3"></div>
+</div>
+
+
+<img src="images/1首页_slices/椭圆%204%20拷贝%203.png" class="circle" id="circle1">
+<img src="images/1首页_slices/椭圆%204%20拷贝%203.png" class="circle" id="circle2">
+<img src="images/1首页_slices/椭圆%204%20拷贝%203.png" class="circle" id="circle3">
+<img src="images/1首页_slices/椭圆%204%20拷贝%203.png" class="circle" id="circle4">
+<span class="circle-nums" id="circle-num1">1</span>
+<span class="circle-nums" id="circle-num2">2</span>
+<span class="circle-nums" id="circle-num3">3</span>
+<span class="circle-nums" id="circle-num4">4</span>
+
+
+<div id="rule-line-left"></div>
+<span id="rule">活动规则</span>
+<div id="rule-line-right"></div>
+<ol id="rule-total">
+    <li>消费满2020元即可参与活动，抽奖次数以购物小票消费金额为准每满2020元即可抽奖一次。</li>
+    <li>参与活动抽到奖品，活动页面会弹出中奖提醒，中奖仅以最后的弹窗为准，请及时与工作人员确认否则视为抽奖失败。</li>
+    <li>活动奖品以收到的实物为准。</li>
+    <li>活动有效期：2020年1月17日-2020年1月19日。</li>
+</ol>
+
+
+<div id="alert-window" >
+    <img src="images/2弹窗/放射光.png" id="x-light">
+    <img src="images/2弹窗/底板.png" alt="底板" id="blackboard">
+    <span id="celebrate">恭喜您获得</span>
+    <img src="images/2弹窗/组%2033.png" alt="框" id="in-board">
+    <img src="images/2弹窗/12元现金券.png" id="real-prize">
+    <div id="prize-name">12元现金券</div>
+    <img src="images/2弹窗/按钮tab-灰色.png" id="button-ikonw">
+    <div id="font-iknow"><span id="span1">我知道了</span><span id="span2">(5s)</span></div>
+    <span id="call">*请联系工作人员登记领取*</span>
+</div>
+
+
+</body>
+<script src="js/index.js"></script>
+</html>
