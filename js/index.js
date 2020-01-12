@@ -127,7 +127,7 @@ let lightChange = () => {
 let requestPrice = () => {
     $(function () {
         //请求参数
-        var list = {};
+        let arrResult=[16,16,16];
         //
         $.ajax({
             //请求方式
@@ -143,23 +143,31 @@ let requestPrice = () => {
                 //更改弹窗文字
                 document.getElementById('prize-name').innerText = datas[result.id - 1].name;
                 console.log(result);
-
-                const arrResult = [result.id, result.id, result.id];
-
+                arrResult= [result.id, result.id, result.id];
                 document.getElementsByClassName('num')[0].style.backgroundPositionY = getPosition(arrResult[0]) + 'px';
                 document.getElementsByClassName('num')[1].style.backgroundPositionY = getPosition(arrResult[1]) + 'px';
                 document.getElementsByClassName('num')[2].style.backgroundPositionY = getPosition(arrResult[2]) + 'px';
                 drawCnt++;
-
-
                 return arrResult;
             },
-            //请求失败，包含具体的错误信息
+            //请求失败，包含具体的错误信息，即使断网也要滚动成12元代金券的最小奖励
             error: function (e) {
-                console.log(e.status);
+                //更改弹窗图片
+                document.getElementById('real-prize').src = datas[15].url;
+                //更改弹窗文字
+                document.getElementById('prize-name').innerText = datas[15].name;
+                arrResult= [16, 16, 16];
+                document.getElementsByClassName('num')[0].style.backgroundPositionY = getPosition(arrResult[0]) + 'px';
+                document.getElementsByClassName('num')[1].style.backgroundPositionY = getPosition(arrResult[1]) + 'px';
+                document.getElementsByClassName('num')[2].style.backgroundPositionY = getPosition(arrResult[2]) + 'px';
+
+                //将断网时设置为12元代金券
+                document.getElementById('real-prize').src='images/2弹窗/12元现金券.png';
+                document.getElementById('prize-name').innerText='12元代金券';
+
                 console.log(e.responseText);
-                return [15, 15, 15];
-                alert('请求错误，请联系管理员。');
+                alert('网络波动，请联系工作人员！');
+                return [16, 16, 16];
             }
         });
     });
