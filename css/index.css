@@ -15,7 +15,7 @@ html, body {
     font-size: medium;
     font-family: sy-medium, '微软雅黑', sans-serif;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-image: url("../images/1首页_slices/bg.png");
+    background-image: url("https://1heng-files.oss-cn-beijing.aliyuncs.com/images/1%E9%A6%96%E9%A1%B5_slices/bg.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /*开启3d渲染，硬件加速*/
