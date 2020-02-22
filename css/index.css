@@ -377,17 +377,17 @@ ol li {
     color: #333
 }
 
-@font-face {
-    font-family: sy-medium;
-    src: url("../font/SourceHanSansCN-Medium.otf");
-}
+/*@font-face {*/
+/*    font-family: sy-medium;*/
+/*    src: url("../font/SourceHanSansCN-Medium.otf");*/
+/*}*/
 
-@font-face {
-    font-family: sy-bold;
-    src: url("../font/SourceHanSansCN-Bold.otf");
-}
+/*@font-face {*/
+/*    font-family: sy-bold;*/
+/*    src: url("../font/SourceHanSansCN-Bold.otf");*/
+/*}*/
 
-@font-face {
-    font-family: sy-regular;
-    src: url("../font/SourceHanSansCN-Regular.otf");
-}
+/*@font-face {*/
+/*    font-family: sy-regular;*/
+/*    src: url("../font/SourceHanSansCN-Regular.otf");*/
+/*}*/

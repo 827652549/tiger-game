@@ -3,7 +3,7 @@ let isPlay = false;
 let isLight = false;//跑马灯交替标识
 let light = document.getElementById('light');
 let drawCnt = 0; // 计数器，每抽一次奖自增1
-let u = 188; // 每个数字图片的高度，整张长图的高度是337px
+let u = 188; // 每个数字图片的高度
 let AlertWindow = document.getElementById('alert-window');
 let lightInterval = null;
 let result = null;
@@ -127,7 +127,7 @@ let lightChange = () => {
 let requestPrice = () => {
     $(function () {
         //请求参数
-        let arrResult=[16,16,16];
+        let arrResult = [16, 16, 16];
         //
         $.ajax({
             //请求方式
@@ -143,7 +143,7 @@ let requestPrice = () => {
                 //更改弹窗文字
                 document.getElementById('prize-name').innerText = datas[result.id - 1].name;
                 console.log(result);
-                arrResult= [result.id, result.id, result.id];
+                arrResult = [result.id, result.id, result.id];
                 document.getElementsByClassName('num')[0].style.backgroundPositionY = getPosition(arrResult[0]) + 'px';
                 document.getElementsByClassName('num')[1].style.backgroundPositionY = getPosition(arrResult[1]) + 'px';
                 document.getElementsByClassName('num')[2].style.backgroundPositionY = getPosition(arrResult[2]) + 'px';
@@ -156,14 +156,14 @@ let requestPrice = () => {
                 document.getElementById('real-prize').src = datas[15].url;
                 //更改弹窗文字
                 document.getElementById('prize-name').innerText = datas[15].name;
-                arrResult= [16, 16, 16];
+                arrResult = [16, 16, 16];
                 document.getElementsByClassName('num')[0].style.backgroundPositionY = getPosition(arrResult[0]) + 'px';
                 document.getElementsByClassName('num')[1].style.backgroundPositionY = getPosition(arrResult[1]) + 'px';
                 document.getElementsByClassName('num')[2].style.backgroundPositionY = getPosition(arrResult[2]) + 'px';
 
                 //将断网时设置为12元代金券
-                document.getElementById('real-prize').src='images/2弹窗/12元现金券.png';
-                document.getElementById('prize-name').innerText='12元代金券';
+                document.getElementById('real-prize').src = 'images/2弹窗/12元现金券.png';
+                document.getElementById('prize-name').innerText = '12元代金券';
 
                 console.log(e.responseText);
                 alert('网络波动，请联系工作人员！');
