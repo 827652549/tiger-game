@@ -20,3 +20,7 @@
 
 ### 演示
 视频演示：[https://827652549.github.io/139.MP4](https://827652549.github.io/139.MP4)
+
+效果图：
+
+<img src="https://s2.ax1x.com/2020/02/22/3MFkuV.jpg" width="50%" align="middle"/>
