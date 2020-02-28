@@ -180,7 +180,7 @@ let buttonAction = () => {
  * 发布配置按钮
  */
 let download = () => {
-    window.open("http://10.85.16.65:8080/download",'_blank');
+    window.open("http://39.106.201.50:8080/download",'_blank');
 };
 
 /**
