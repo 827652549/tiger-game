@@ -53,6 +53,10 @@ let requestPage1 = () => {
 
 //请求抽奖记录
 let requestPage2 = () => {
+    let str = '';
+    let record = document.getElementById('record');
+
+
     $(function () {
         $.ajax({
             //请求方式
@@ -65,7 +69,7 @@ let requestPage2 = () => {
             success: function (result) {
                 for (let i = result.length - 1; i >= 0; i--) {
                     let date = new Date(result[i].createTime);
-                    document.getElementById('record').innerHTML +=
+                    str +=
                         `
                     <tr>
                     <td>
@@ -84,7 +88,7 @@ let requestPage2 = () => {
             </tr>
                     `;
                 }
-                console.log(result);
+                record.innerHTML = str;
             },
             //请求失败，包含具体的错误信息
             error: function (e) {
